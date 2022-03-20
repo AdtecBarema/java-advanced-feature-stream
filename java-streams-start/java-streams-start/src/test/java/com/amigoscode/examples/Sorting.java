@@ -52,6 +52,6 @@ public class Sorting {
                 .filter (car -> car.getColor ().equalsIgnoreCase ("Blue"))
                 .sorted (Comparator.comparing (Car::getPrice)).limit (10).collect (Collectors.toList ());
 topTenMostExpensiveBlueCars.forEach (System.out::println);
-     
+
     }
 }
